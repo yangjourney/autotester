@@ -18,10 +18,13 @@ import site
 import sys
 SITE_DIR = os.path.dirname(__file__)
 PROJECT_ROOT = os.path.dirname(SITE_DIR)
-site_packages = os.path.join(PROJECT_ROOT, 'env/lib/python2.6/site-packages')
+#site_packages = os.path.join(PROJECT_ROOT, 'env/lib/python2.6/site-packages')
+site_packages = os.path.join(PROJECT_ROOT, 'C:\Python36\Lib\site-packages')
 site.addsitedir(os.path.abspath(site_packages))
-sys.path.insert(0, "/var/www/autotester")
-sys.path.insert(1, "/var/www/autotester/autotester")
+#sys.path.insert(0, "/var/www/autotester")
+#sys.path.insert(1, "/var/www/autotester/autotester")
+sys.path.insert(0, "D:\tools\APItesttools\buglife-autotester-beta1.0\autotester")
+sys.path.insert(1, "D:\tools\APItesttools\buglife-autotester-beta1.0\autotester\autotester\autotester")
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "autotester.settings")
 
